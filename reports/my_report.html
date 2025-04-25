@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title id="head-title">my_report.html</title>
+      <link href="assets\style.css" rel="stylesheet" type="text/css"/>
+  </head>
+  <body>
+    <h1 id="title">my_report.html</h1>
+    <p>Report generated on 25-Apr-2025 at 23:06:16 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a>
+        v4.1.1</p>
+    <div id="environment-header">
+      <h2>Environment</h2>
+    </div>
+    <table id="environment"></table>
+    <!-- TEMPLATES -->
+      <template id="template_environment_row">
+      <tr>
+        <td></td>
+        <td></td>
+      </tr>
+    </template>
+    <template id="template_results-table__body--empty">
+      <tbody class="results-table-row">
+        <tr id="not-found-message">
+          <td colspan="4">No results found. Check the filters.</th>
+        </tr>
+    </template>
+    <template id="template_results-table__tbody">
+      <tbody class="results-table-row">
+        <tr class="collapsible">
+        </tr>
+        <tr class="extras-row">
+          <td class="extra" colspan="4">
+            <div class="extraHTML"></div>
+            <div class="media">
+              <div class="media-container">
+                  <div class="media-container__nav--left"><</div>
+                  <div class="media-container__viewport">
+                    <img src="" />
+                    <video controls>
+                      <source src="" type="video/mp4">
+                    </video>
+                  </div>
+                  <div class="media-container__nav--right">></div>
+                </div>
+                <div class="media__name"></div>
+                <div class="media__counter"></div>
+            </div>
+            <div class="logwrapper">
+              <div class="logexpander"></div>
+              <div class="log"></div>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </template>
+    <!-- END TEMPLATES -->
+    <div class="summary">
+      <div class="summary__data">
+        <h2>Summary</h2>
+        <div class="additional-summary prefix">
+        </div>
+        <p class="run-count">25 tests took 00:02:51.</p>
+        <p class="filter">(Un)check the boxes to filter the results.</p>
+        <div class="summary__reload">
+          <div class="summary__reload__button hidden" onclick="location.reload()">
+            <div>There are still tests running. <br />Reload this page to get the latest results!</div>
+          </div>
+        </div>
+        <div class="summary__spacer"></div>
+        <div class="controls">
+          <div class="filters">
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="failed" disabled/>
+            <span class="failed">0 Failed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="passed" />
+            <span class="passed">25 Passed,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="skipped" disabled/>
+            <span class="skipped">0 Skipped,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xfailed" disabled/>
+            <span class="xfailed">0 Expected failures,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="xpassed" disabled/>
+            <span class="xpassed">0 Unexpected passes,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="error" disabled/>
+            <span class="error">0 Errors,</span>
+            <input checked="true" class="filter" name="filter_checkbox" type="checkbox" data-test-result="rerun" disabled/>
+            <span class="rerun">0 Reruns</span>
+          </div>
+          <div class="collapse">
+            <button id="show_all_details">Show all details</button>&nbsp;/&nbsp;<button id="hide_all_details">Hide all details</button>
+          </div>
+        </div>
+      </div>
+      <div class="additional-summary summary">
+      </div>
+      <div class="additional-summary postfix">
+      </div>
+    </div>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable" data-column-type="result">Result</th>
+          <th class="sortable" data-column-type="testId">Test</th>
+          <th class="sortable" data-column-type="duration">Duration</th>
+          <th>Links</th>
+        </tr>
+      </thead>
+    </table>
+  </body>
+  <footer>
+    <div id="data-container" data-jsonblob="{&#34;environment&#34;: {&#34;Python&#34;: &#34;3.13.2&#34;, &#34;Platform&#34;: &#34;Windows-11-10.0.26100-SP0&#34;, &#34;Packages&#34;: {&#34;pytest&#34;: &#34;8.3.5&#34;, &#34;pluggy&#34;: &#34;1.5.0&#34;}, &#34;Plugins&#34;: {&#34;allure-pytest&#34;: &#34;2.14.0&#34;, &#34;base-url&#34;: &#34;2.1.0&#34;, &#34;html&#34;: &#34;4.1.1&#34;, &#34;metadata&#34;: &#34;3.1.1&#34;, &#34;playwright&#34;: &#34;0.7.0&#34;}, &#34;Base URL&#34;: &#34;&#34;}, &#34;tests&#34;: {&#34;test/authentication/test_FaildLogin.py::test_login_page_invalid_credentials[admin-admin]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/authentication/test_FaildLogin.py::test_login_page_invalid_credentials[admin-admin]&#34;, &#34;duration&#34;: &#34;00:00:05&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/authentication/test_FaildLogin.py::test_login_page_invalid_credentials[admin-admin]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:05&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/authentication/test_FaildLogin.py::test_login_page_invalid_credentials[hdnj-djud]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/authentication/test_FaildLogin.py::test_login_page_invalid_credentials[hdnj-djud]&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/authentication/test_FaildLogin.py::test_login_page_invalid_credentials[hdnj-djud]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/authentication/test_ForgotPassword.py::test_forgot_password_flow&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/authentication/test_ForgotPassword.py::test_forgot_password_flow&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/authentication/test_ForgotPassword.py::test_forgot_password_flow&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/authentication/test_login.py::test_login[admin-admin123-True]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/authentication/test_login.py::test_login[admin-admin123-True]&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/authentication/test_login.py::test_login[admin-admin123-True]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/authentication/test_login.py::test_login[admin-wrongpass-False]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/authentication/test_login.py::test_login[admin-wrongpass-False]&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/authentication/test_login.py::test_login[admin-wrongpass-False]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/authentication/test_login.py::test_login[wronguser-admin123-False]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/authentication/test_login.py::test_login[wronguser-admin123-False]&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/authentication/test_login.py::test_login[wronguser-admin123-False]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/authentication/test_loginOrangeHRM.py::test_login_page_title&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/authentication/test_loginOrangeHRM.py::test_login_page_title&#34;, &#34;duration&#34;: &#34;00:00:04&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/authentication/test_loginOrangeHRM.py::test_login_page_title&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:04&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/authentication/test_registerDemo.py::test_register_demo_website&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/authentication/test_registerDemo.py::test_register_demo_website&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/authentication/test_registerDemo.py::test_register_demo_website&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/file_operations/test_file_download.py::test_file_download[downloads]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/file_operations/test_file_download.py::test_file_download[downloads]&#34;, &#34;duration&#34;: &#34;00:00:08&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/file_operations/test_file_download.py::test_file_download[downloads]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:08&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nFile successfully downloaded to: downloads\\1745595544376_teamss.png\n&#34;}], &#34;test/file_operations/test_file_upload.py::test_file_upload[C:\\\\Users\\\\ASUS PRO\\\\Desktop\\\\python\\\\uploads\\\\test.txt]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/file_operations/test_file_upload.py::test_file_upload[C:\\\\Users\\\\ASUS PRO\\\\Desktop\\\\python\\\\uploads\\\\test.txt]&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/file_operations/test_file_upload.py::test_file_upload[C:\\\\Users\\\\ASUS PRO\\\\Desktop\\\\python\\\\uploads\\\\test.txt]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nError during file upload: Page.wait_for_selector: Timeout 5000ms exceeded.\nCall log:\n  - waiting for locator(&amp;quot;span#input-4-filename&amp;quot;) to be visible\n\n&#34;}], &#34;test/ui/test_ExtractTableData.py::test_extract_table_data&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/ui/test_ExtractTableData.py::test_extract_table_data&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/ui/test_ExtractTableData.py::test_extract_table_data&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nGoogle\nMaria Anders\nGermany\nMeta\nFrancisco Chang\nMexico\nMicrosoft\nRoland Mendel\nAustria\nIsland Trading\nHelen Bennett\nUK\nAdobe\nYoshi Tannamuri\nCanada\nAmazon\nGiovanni Rovelli\nItaly\n&#34;}], &#34;test/ui/test_OpenMultipleWindows.py::test_open_multiple_windows_demo&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/ui/test_OpenMultipleWindows.py::test_open_multiple_windows_demo&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/ui/test_OpenMultipleWindows.py::test_open_multiple_windows_demo&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nNumber of open pages: 2\nPage 0 URL: https://demo.automationtesting.in/Windows.html\nPage 1 URL: https://www.selenium.dev/\nOriginal page title: Frames &amp;amp; windows\nNew page title: Selenium\n&#34;}], &#34;test/ui/test_actionsdemo.py::test_mouse_keyboard_actions&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/ui/test_actionsdemo.py::test_mouse_keyboard_actions&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/ui/test_actionsdemo.py::test_mouse_keyboard_actions&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/ui/test_dropdown_ajaxResponse.py::test_dropdown_ajax_response&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/ui/test_dropdown_ajaxResponse.py::test_dropdown_ajax_response&#34;, &#34;duration&#34;: &#34;00:00:12&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/ui/test_dropdown_ajaxResponse.py::test_dropdown_ajax_response&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:12&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nStatus: 200\nData: {&amp;quot;data&amp;quot;:[{&amp;quot;subcategory&amp;quot;:&amp;quot;Red&amp;quot;,&amp;quot;subcat_id&amp;quot;:&amp;quot;5&amp;quot;},{&amp;quot;subcategory&amp;quot;:&amp;quot;Blue&amp;quot;,&amp;quot;subcat_id&amp;quot;:&amp;quot;6&amp;quot;},{&amp;quot;subcategory&amp;quot;:&amp;quot;Green&amp;quot;,&amp;quot;subcat_id&amp;quot;:&amp;quot;7&amp;quot;},{&amp;quot;subcategory&amp;quot;:&amp;quot;Yellow&amp;quot;,&amp;quot;subcat_id&amp;quot;:&amp;quot;8&amp;quot;}]}\nURL: https://www.plus2net.com/php_tutorial/dd-ajax.php?cat_id=2&amp;amp;sid=0.2168130458167663\n&#34;}], &#34;test/ui/test_fillRegistration.py::test_fill_registration_form&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/ui/test_fillRegistration.py::test_fill_registration_form&#34;, &#34;duration&#34;: &#34;00:00:11&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/ui/test_fillRegistration.py::test_fill_registration_form&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:11&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/ui/test_scrapeLinks_.py::test_scrape_links_from_page&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/ui/test_scrapeLinks_.py::test_scrape_links_from_page&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/ui/test_scrapeLinks_.py::test_scrape_links_from_page&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nNumber of &amp;lt;a&amp;gt; tags: 45\nhttp://www.automationtesting.in\nIndex.html\nRegister.html\nWebTable.html\nSwitchTo.html\nAlerts.html\nWindows.html\nFrames.html\nWidgets.html\nAccordion.html\nAutoComplete.html\nDatepicker.html\nSlider.html\nInteractions.html\nStatic.html\nDynamic.html\nSelectable.html\nResizable.html\nSwitchTo.html\nYoutube.html\nVimeo.html\nWYSIWYG.html\nTinyMCE.html\nCKEditor.html\nSummerNote.html\nCodeMirror.html\n#\nCharts.html\nDynamicData.html\nFileDownload.html\nFileUpload.html\nJqueryProgressBar.html\nLoader.html\nModals.html\nProgressBar.html\nhttp://practice.automationtesting.in/\n#Default\n#Serialize\n#\nhttps://www.facebook.com/automationtesting2016/\nhttps://twitter.com/krishnasakinala\nhttps://www.linkedin.com/nhome/?trk=hb_signin\nhttps://plus.google.com/105286300926085335367\nhttps://www.youtube.com/channel/UCmQRa3pWM9zsB474URz8ESg\nExecute\n&#34;}], &#34;test/utilities/test_AlertHandling.py::test_alert_handling&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/utilities/test_AlertHandling.py::test_alert_handling&#34;, &#34;duration&#34;: &#34;00:00:10&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/utilities/test_AlertHandling.py::test_alert_handling&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:10&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nAlert message: Press a Button !\n&#34;}], &#34;test/utilities/test_vedio_screen.py::test_login_screenshots_and_video&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/utilities/test_vedio_screen.py::test_login_screenshots_and_video&#34;, &#34;duration&#34;: &#34;00:00:09&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/utilities/test_vedio_screen.py::test_login_screenshots_and_video&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:09&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nNo video recorded.\n&#34;}], &#34;test/websites/test_TestTitleClass.py::TestTitleClass::test_goto_google&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/websites/test_TestTitleClass.py::TestTitleClass::test_goto_google&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/websites/test_TestTitleClass.py::TestTitleClass::test_goto_google&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/websites/test_TestTitleClass.py::TestTitleClass::test_orange&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/websites/test_TestTitleClass.py::TestTitleClass::test_orange&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/websites/test_TestTitleClass.py::TestTitleClass::test_orange&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/websites/test_TestTitleClass.py::TestTitleClass::test_orange1&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/websites/test_TestTitleClass.py::TestTitleClass::test_orange1&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/websites/test_TestTitleClass.py::TestTitleClass::test_orange1&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/websites/test_cookies_redbus.py::test_redbus_operations[https://www.redbus.in/]&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/websites/test_cookies_redbus.py::test_redbus_operations[https://www.redbus.in/]&#34;, &#34;duration&#34;: &#34;00:00:06&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/websites/test_cookies_redbus.py::test_redbus_operations[https://www.redbus.in/]&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:06&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nOriginal cookies: [{&amp;#x27;name&amp;#x27;: &amp;#x27;funnelVariant&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;RESPONSIVE&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1746216359.859357, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;country&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;IND&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697959.859897, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;currency&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;INR&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697961.189161, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;defaultlanguage&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;en&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697959.860095, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;language&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;en&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697959.86014, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;selectedCurrency&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;INR&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697959.860183, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;bm_sz&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;F59454E64173A8F6CCF7DA3C773D012F~YAAQh4YUAjPjNmuWAQAACmqObhsWvU0OOlYC9MD22vq3I8qWAC7u2fMyb2s7xK7a8ZT+NckI6ALUzViJjjjeQ87OSJ3qJXAZUHPO4Jd/+MCRG6pbVshixw8q6+69MtMnIRleBMFSYo3B+Yp6erruNl3fBBseaJjzS0TjEpVFoqI8FhxC1JZqmQD0Ip1oQU3m3BxIjqsVidWs41oqOaqUEM1Mc2i/hDcO+qTkl1k1BOrz7b25tiTVy1fJ0CGACf/DMihyZBoV/Yyyhoein7OTTXQSuddXE7wN/rEPmtjiVy7H/YO/xPEPjRJezc0XXp523gDPNAargLWsbYCvuKe5/repmEWr+jq/hJKIauN6k/MNbGlqvWDHEoKpqBVidOCmxLM80NfNgjY8zQ==~4408369~3355956&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745625959.860389, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;channel&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;DWEB&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1780171560.476898, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;defaultLanguage&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;en&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697961.18926, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;rbuuid&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;af3eb970-2210-11f0-9418-5391040f5adf&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1777147561.189283, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;mriClientId&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;BRaf3eb971-2210-11f0-9418-5391040f5adf&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1777147561.189309, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;mriSessionId&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;BRaf3eb971-2210-11f0-9418-5391040f5adf&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745613361.189329, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;env&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;PROD&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;buildVersion&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;PROD_c0f536c7ba&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;_abck&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;CF0F7612F4A7064B664660D688AEF358~-1~YAAQnoYUAn0ssUqWAQAAKm+Obg1g59A/7k/5qzZjh1DrZOHhUbptDMr4dve7Up9qSp1QeEO/8Xvww44TkIQe0GNocqe1MqcbwLiMmWMRUAeCiXPPjhPYtDU5U0ybJ5nDzf6rdEhTPCjMv8HZc6h4A1bCyTdtrnKLUTE0xbldN00erWuathKlJfBqEyqRmFSPGt86eXvRpVjG4Hq5VIkE26O/0NI6igVAZuG0OK+583nL5az90BKCG4bQP6kZn2UnVCf0gp6kTssKBbt99W5JmxEq8t+RkLljatkUC5hMFn2YfVpWx5FPwj3QqekEL2XJ2OfXUVpwg0hqyknhqiE+FQXXdWQfKUH9v9tBBGw6xFwMFfLRxc82YXv4WGRXcomCAjWXVz/YnCGE2E+gQi+dLgnS+K816wnwqjgSSJyWlEp7FelrcCT42uCuDNRmJT5kVhAR~-1~-1~-1&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1777147560.189401, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;ak_bmsc&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;E2431ECBD47818102214FA453C0E8446~000000000000000000000000000000~YAAQnoYUAn4ssUqWAQAAKm+ObhuyYylhtT9Rej2Xj/LGlgbVJvZNn8XL43lYI45Wbr11QRf6x2xi/TMn3j7aA2Jz9QNcuNLTWlqaJIexeUk4paFJ3OsbL7puS85OOVh/E8w5zKa1hZRv32PbQET+oqGn/Eme6P8rAgWCzM+fmu/Zz99C5RwbCml/y7GiD6z3EsU8lSar9TgfvUmD/nMGxi5Sizz8ogdiiqDxkv6zbcuYRJw/jmUIZUnT3sN5yh9dD6VkxkHZCtwSgytzgm0riByn7Nom5g3iu6U1TFwd/OCJMApg83HoMYMsjV663ZbxjAMWwhNSTzYXXMY3RNmzANzsZ74AdlTryh1FCALiZ9k/idrgS1lv7zQckyVuSNAN5/ETaC+oiVmeephEzGHKNChV1AviXd4YYp96CIjRrTUb48FJlywBDA==&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745618760.189442, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;bm_sv&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;9CD08A597ECA0CE4DEC4CD2525C347AF~YAAQnoYUAn8ssUqWAQAAKm+ObhtKg+Q1bJz9XnGw9UECcvFKAquRC7b45fF/6Hlk4YJ50qaQql3Jk5lTv7x+UzsBga800UMQOlSF3l1uaNbIFxmcR5n8W+lF0qWMJC2yAp0AEqHIWgUD3QNIAfgJ+MZmeUaCO6P+x2Y1Nb+JSjo+oNafGMlLQ2zbCPJpHj3/75GCfGSMvn/jl3QnpU3ffB1b+wzrQlzJUVdopDyWF3WZX35JLgqP4nGdWL9AhCw=~1&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745618761.189505, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;_ga&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;GA1.1.333554173.1745611561&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1780171561.238077, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;_ga_W2P7QGN8S2&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;GS1.1.1745611561.1.0.1745611561.60.0.273547427&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1780171561.265705, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}]\nCookies cleared.\nNew cookie added.\nScreenshot saved.\n&#34;}], &#34;test/websites/test_open_google.py::test_open_google&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/websites/test_open_google.py::test_open_google&#34;, &#34;duration&#34;: &#34;00:00:02&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/websites/test_open_google.py::test_open_google&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:02&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/websites/test_open_google.py::test_open_redbus&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/websites/test_open_google.py::test_open_redbus&#34;, &#34;duration&#34;: &#34;00:00:03&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/websites/test_open_google.py::test_open_redbus&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:03&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;No log output captured.&#34;}], &#34;test/websites/test_redbus_operations.py::test_redbus_operations&#34;: [{&#34;extras&#34;: [], &#34;result&#34;: &#34;Passed&#34;, &#34;testId&#34;: &#34;test/websites/test_redbus_operations.py::test_redbus_operations&#34;, &#34;duration&#34;: &#34;00:00:07&#34;, &#34;resultsTableRow&#34;: [&#34;&lt;td class=\&#34;col-result\&#34;&gt;Passed&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-testId\&#34;&gt;test/websites/test_redbus_operations.py::test_redbus_operations&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-duration\&#34;&gt;00:00:07&lt;/td&gt;&#34;, &#34;&lt;td class=\&#34;col-links\&#34;&gt;&lt;/td&gt;&#34;], &#34;log&#34;: &#34;----------------------------- Captured stdout call -----------------------------\nOriginal cookies: [{&amp;#x27;name&amp;#x27;: &amp;#x27;funnelVariant&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;NON-RESPONSIVE&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1746216370.304809, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;country&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;IND&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697970.305133, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;currency&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;INR&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697970.305186, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;defaultlanguage&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;en&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697970.305209, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;language&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;en&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697970.305232, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;selectedCurrency&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;INR&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745697970.305259, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;bm_sz&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;871F48A1021013049A130DCA4238CB3B~YAAQh4YUAv/oNmuWAQAA2JKObhvrNtSFpTEpEZH5naQZy3RdV/HN0rp0HujJeeDXhDenS7cvp0spj6mO8sWEdsv1rPizJX7mHEF0MOV70hZkgQW4+LZOcT0p2X+UWgSOijb9MjLbpii7Mu2qQ/1tEDKgoKXY6AQlHFpd7Z1M0SxSF5TUsw9dyCECkvQUWLiat5VXdS/N01u0/N0N6NadvBfRWbMowJlWkODkLXYBusjJGB7/qZ13JT6I5UPpwM0fZqQHPevwldAH8/fdBLbdvnI0Tvorh0nYHlD6hrn1xfr3ZawfaKhmyBNR3FwDX3tB145TI9cKAdlB0oTX/gTI8MIAUM0mgb51lBWlKFcrBe3NYTEiSSmmthuCthz7FhgzJGy8GIONnpvwuQ==~4535348~3229236&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745625970.305374, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;reddealBoostAB&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;V2&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1747425970, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;abExps&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;[&amp;quot;reddealBoostAB&amp;quot;]&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;abExpsVariants&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;reddealBoostAB:V2&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;ak_bmsc&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;58A3BCB4E17643757EB984CDF6F98FC8~000000000000000000000000000000~YAAQnoYUArMzsUqWAQAAWJiObht/6PTdvXPPf7psMBcGY6+fbY0HG0nqHl8b+D3UC4DkmnZo/2LCmPN0vMH/XATb2FRKd79MiG5g3N61zsi0Oa7TbReWXcQp7AEEPOey2KOWPwrWGPsOxcQyjMSzG2LexqWADUUdxefHZn+ei/13neROT41k7XBMxNCd5p1Efxes8mqnY0eUA7drX3hKyPC6OBtWassbDIG/U/AYNOLxNngeSqdaOaB6zE7Hw7YG+sv9BmU7mBEKnuQkl1xUcM+Sz909zxvEMWzkkRl+6sS7MrPcKILV1YwCCMaN5Nm40mVCYege+O6mjspkhMSvC/TEhTNgaRxdnOFtdTShhom0Ch9F4CEkyYDYLmDM0qwPDcwOeT3tXu8pk3pgjRsNWFJ1uoletGsyJgVhkTjQLueMmq1NLqdMtk8ypAOMB96Qwm5hDAkL4xoddjjKosZYEui5etjNh/YABPWqo2IX5wnegw==&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745618769.713147, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;_abck&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;2F6BC23177390F5C9563F87B59C9566B~-1~YAAQnoYUAgMzsUqWAQAAFpWObg3apI/hoPtufPjhzhl3tEx26I894OUGW7LrIAi69I6LB4qLblN3+Orw6oaV64Gp3kb8JrXNX4scJe8MRmzzvREKdO13CCgj2BaG/mvgbNo2sIh8T8Qr9077K40XvtDllZ/IOgI15PRxUwYSy4BkidNu4taAeA/s4DzILAiCpweveDuib76duPQW7VwZmYGfn+GbWVe0QJvf6zk+YWWF4pRHwCPd2jtkD3N7c6tcMuoQFp34/Ja1BggzDcFHRYV0PNQ/hpy5nKUCK0Wtl3kbE8n6Sv1x0fUvz0wXOaB9/15QprGKo1xHsS5Hc/L7b0W+6A0t8S7I3EK+fTLKCS+m8UCdeXP0FViHmUNQstWBlKWLPna7a/bFRVgEE3pHlKNMHyvdmffvlE8a+Y2DKe5noKLyTKDpNd+s+E/SDKsbAsp1~-1~-1~-1&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1777147570.773239, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;_gcl_au&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;1.1.567830901.1745611572&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1753387572, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;_ga&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;GA1.1.2138618674.1745611572&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1780171572.468866, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;deviceSessionId&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;d8dc6bea-66bb-429f-9ade-109e4a3047a7&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;reqOrigin&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;IND&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;mriClientId&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;WDdf37087a-0fab-4b15-80b6-1963a2b9e25b&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1777147572.495259, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;mriSessionId&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;WDdf37087a-0fab-4b15-80b6-1963a2b9e25b&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745613372.495284, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;mriClientIdSetDate&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;4%2F25%2F25%208%3A06%3A01%20PM&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;lzFlag&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;1&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;bCore&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;1&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;defaultCountry&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;IND&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: -1, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;_ga_1SE754V89Y&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;GS1.1.1745611572.1.1.1745611572.60.0.669813326&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1780171572.828003, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;test_cookie&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;CheckForPermission&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;.doubleclick.net&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1745612472.985929, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: True, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;None&amp;#x27;}, {&amp;#x27;name&amp;#x27;: &amp;#x27;rb_fpData&amp;#x27;, &amp;#x27;value&amp;#x27;: &amp;#x27;%7B%22browserName%22%3A%22Chrome%22%2C%22browserVersion%22%3A%22134.0.0.0%22%2C%22os%22%3A%22Windows%22%2C%22osVersion%22%3A%2210%22%2C%22screenSize%22%3A%221280%2C720%22%2C%22screenDPI%22%3A1.0000000149011612%2C%22screenResolution%22%3A%221280.0000190734863x720.0000107288361%22%2C%22screenColorDepth%22%3A24%2C%22aspectRatio%22%3A%2216%3A9%22%2C%22systemLanguage%22%3A%22he-IL%22%2C%22connection%22%3A%224g%22%2C%22userAgent%22%3A%22mozilla/5.0%20%28windows%20nt%2010.0%3B%20win64%3B%20x64%29%20applewebkit/537.36%20%28khtml%2C%20like%20gecko%29%20chrome/134.0.0.0%20safari/537.36%7CWin32%7Che-IL%22%2C%22timeZone%22%3A3%7D&amp;#x27;, &amp;#x27;domain&amp;#x27;: &amp;#x27;www.redbus.in&amp;#x27;, &amp;#x27;path&amp;#x27;: &amp;#x27;/&amp;#x27;, &amp;#x27;expires&amp;#x27;: 1780171574.822389, &amp;#x27;httpOnly&amp;#x27;: False, &amp;#x27;secure&amp;#x27;: False, &amp;#x27;sameSite&amp;#x27;: &amp;#x27;Lax&amp;#x27;}]\nCookies cleared.\nNew cookie added.\nScreenshot saved.\n&#34;}]}, &#34;renderCollapsed&#34;: [&#34;passed&#34;], &#34;initialSort&#34;: &#34;result&#34;, &#34;title&#34;: &#34;my_report.html&#34;}"></div>
+    <script>
+      (function(){function r(e,n,t){function o(i,f){if(!n[i]){if(!e[i]){var c="function"==typeof require&&require;if(!f&&c)return c(i,!0);if(u)return u(i,!0);var a=new Error("Cannot find module '"+i+"'");throw a.code="MODULE_NOT_FOUND",a}var p=n[i]={exports:{}};e[i][0].call(p.exports,function(r){var n=e[i][1][r];return o(n||r)},p,p.exports,r,e,n,t)}return n[i].exports}for(var u="function"==typeof require&&require,i=0;i<t.length;i++)o(t[i]);return o}return r})()({1:[function(require,module,exports){
+const { getCollapsedCategory, setCollapsedIds } = require('./storage.js')
+
+class DataManager {
+    setManager(data) {
+        const collapsedCategories = [...getCollapsedCategory(data.renderCollapsed)]
+        const collapsedIds = []
+        const tests = Object.values(data.tests).flat().map((test, index) => {
+            const collapsed = collapsedCategories.includes(test.result.toLowerCase())
+            const id = `test_${index}`
+            if (collapsed) {
+                collapsedIds.push(id)
+            }
+            return {
+                ...test,
+                id,
+                collapsed,
+            }
+        })
+        const dataBlob = { ...data, tests }
+        this.data = { ...dataBlob }
+        this.renderData = { ...dataBlob }
+        setCollapsedIds(collapsedIds)
+    }
+
+    get allData() {
+        return { ...this.data }
+    }
+
+    resetRender() {
+        this.renderData = { ...this.data }
+    }
+
+    setRender(data) {
+        this.renderData.tests = [...data]
+    }
+
+    toggleCollapsedItem(id) {
+        this.renderData.tests = this.renderData.tests.map((test) =>
+            test.id === id ? { ...test, collapsed: !test.collapsed } : test,
+        )
+    }
+
+    set allCollapsed(collapsed) {
+        this.renderData = { ...this.renderData, tests: [...this.renderData.tests.map((test) => (
+            { ...test, collapsed }
+        ))] }
+    }
+
+    get testSubset() {
+        return [...this.renderData.tests]
+    }
+
+    get environment() {
+        return this.renderData.environment
+    }
+
+    get initialSort() {
+        return this.data.initialSort
+    }
+}
+
+module.exports = {
+    manager: new DataManager(),
+}
+
+},{"./storage.js":8}],2:[function(require,module,exports){
+const mediaViewer = require('./mediaviewer.js')
+const templateEnvRow = document.getElementById('template_environment_row')
+const templateResult = document.getElementById('template_results-table__tbody')
+
+function htmlToElements(html) {
+    const temp = document.createElement('template')
+    temp.innerHTML = html
+    return temp.content.childNodes
+}
+
+const find = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return elem.querySelector(selector)
+}
+
+const findAll = (selector, elem) => {
+    if (!elem) {
+        elem = document
+    }
+    return [...elem.querySelectorAll(selector)]
+}
+
+const dom = {
+    getStaticRow: (key, value) => {
+        const envRow = templateEnvRow.content.cloneNode(true)
+        const isObj = typeof value === 'object' && value !== null
+        const values = isObj ? Object.keys(value).map((k) => `${k}: ${value[k]}`) : null
+
+        const valuesElement = htmlToElements(
+            values ? `<ul>${values.map((val) => `<li>${val}</li>`).join('')}<ul>` : `<div>${value}</div>`)[0]
+        const td = findAll('td', envRow)
+        td[0].textContent = key
+        td[1].appendChild(valuesElement)
+
+        return envRow
+    },
+    getResultTBody: ({ testId, id, log, extras, resultsTableRow, tableHtml, result, collapsed }) => {
+        const resultBody = templateResult.content.cloneNode(true)
+        resultBody.querySelector('tbody').classList.add(result.toLowerCase())
+        resultBody.querySelector('tbody').id = testId
+        resultBody.querySelector('.collapsible').dataset.id = id
+
+        resultsTableRow.forEach((html) => {
+            const t = document.createElement('template')
+            t.innerHTML = html
+            resultBody.querySelector('.collapsible').appendChild(t.content)
+        })
+
+        if (log) {
+            // Wrap lines starting with "E" with span.error to color those lines red
+            const wrappedLog = log.replace(/^E.*$/gm, (match) => `<span class="error">${match}</span>`)
+            resultBody.querySelector('.log').innerHTML = wrappedLog
+        } else {
+            resultBody.querySelector('.log').remove()
+        }
+
+        if (collapsed) {
+            resultBody.querySelector('.collapsible > td')?.classList.add('collapsed')
+            resultBody.querySelector('.extras-row').classList.add('hidden')
+        } else {
+            resultBody.querySelector('.collapsible > td')?.classList.remove('collapsed')
+        }
+
+        const media = []
+        extras?.forEach(({ name, format_type, content }) => {
+            if (['image', 'video'].includes(format_type)) {
+                media.push({ path: content, name, format_type })
+            }
+
+            if (format_type === 'html') {
+                resultBody.querySelector('.extraHTML').insertAdjacentHTML('beforeend', `<div>${content}</div>`)
+            }
+        })
+        mediaViewer.setup(resultBody, media)
+
+        // Add custom html from the pytest_html_results_table_html hook
+        tableHtml?.forEach((item) => {
+            resultBody.querySelector('td[class="extra"]').insertAdjacentHTML('beforeend', item)
+        })
+
+        return resultBody
+    },
+}
+
+module.exports = {
+    dom,
+    htmlToElements,
+    find,
+    findAll,
+}
+
+},{"./mediaviewer.js":6}],3:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const storageModule = require('./storage.js')
+
+const getFilteredSubSet = (filter) =>
+    manager.allData.tests.filter(({ result }) => filter.includes(result.toLowerCase()))
+
+const doInitFilter = () => {
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+}
+
+const doFilter = (type, show) => {
+    if (show) {
+        storageModule.showCategory(type)
+    } else {
+        storageModule.hideCategory(type)
+    }
+
+    const currentFilter = storageModule.getVisible()
+    const filteredSubset = getFilteredSubSet(currentFilter)
+    manager.setRender(filteredSubset)
+
+    const sortColumn = storageModule.getSort()
+    doSort(sortColumn, true)
+}
+
+module.exports = {
+    doFilter,
+    doInitFilter,
+}
+
+},{"./datamanager.js":1,"./sort.js":7,"./storage.js":8}],4:[function(require,module,exports){
+const { redraw, bindEvents, renderStatic } = require('./main.js')
+const { doInitFilter } = require('./filter.js')
+const { doInitSort } = require('./sort.js')
+const { manager } = require('./datamanager.js')
+const data = JSON.parse(document.getElementById('data-container').dataset.jsonblob)
+
+function init() {
+    manager.setManager(data)
+    doInitFilter()
+    doInitSort()
+    renderStatic()
+    redraw()
+    bindEvents()
+}
+
+init()
+
+},{"./datamanager.js":1,"./filter.js":3,"./main.js":5,"./sort.js":7}],5:[function(require,module,exports){
+const { dom, find, findAll } = require('./dom.js')
+const { manager } = require('./datamanager.js')
+const { doSort } = require('./sort.js')
+const { doFilter } = require('./filter.js')
+const {
+    getVisible,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    getSortDirection,
+    possibleFilters,
+} = require('./storage.js')
+
+const removeChildren = (node) => {
+    while (node.firstChild) {
+        node.removeChild(node.firstChild)
+    }
+}
+
+const renderStatic = () => {
+    const renderEnvironmentTable = () => {
+        const environment = manager.environment
+        const rows = Object.keys(environment).map((key) => dom.getStaticRow(key, environment[key]))
+        const table = document.getElementById('environment')
+        removeChildren(table)
+        rows.forEach((row) => table.appendChild(row))
+    }
+    renderEnvironmentTable()
+}
+
+const addItemToggleListener = (elem) => {
+    elem.addEventListener('click', ({ target }) => {
+        const id = target.parentElement.dataset.id
+        manager.toggleCollapsedItem(id)
+
+        const collapsedIds = getCollapsedIds()
+        if (collapsedIds.includes(id)) {
+            const updated = collapsedIds.filter((item) => item !== id)
+            setCollapsedIds(updated)
+        } else {
+            collapsedIds.push(id)
+            setCollapsedIds(collapsedIds)
+        }
+        redraw()
+    })
+}
+
+const renderContent = (tests) => {
+    const sortAttr = getSort(manager.initialSort)
+    const sortAsc = JSON.parse(getSortDirection())
+    const rows = tests.map(dom.getResultTBody)
+    const table = document.getElementById('results-table')
+    const tableHeader = document.getElementById('results-table-head')
+
+    const newTable = document.createElement('table')
+    newTable.id = 'results-table'
+
+    // remove all sorting classes and set the relevant
+    findAll('.sortable', tableHeader).forEach((elem) => elem.classList.remove('asc', 'desc'))
+    tableHeader.querySelector(`.sortable[data-column-type="${sortAttr}"]`)?.classList.add(sortAsc ? 'desc' : 'asc')
+    newTable.appendChild(tableHeader)
+
+    if (!rows.length) {
+        const emptyTable = document.getElementById('template_results-table__body--empty').content.cloneNode(true)
+        newTable.appendChild(emptyTable)
+    } else {
+        rows.forEach((row) => {
+            if (!!row) {
+                findAll('.collapsible td:not(.col-links', row).forEach(addItemToggleListener)
+                find('.logexpander', row).addEventListener('click',
+                    (evt) => evt.target.parentNode.classList.toggle('expanded'),
+                )
+                newTable.appendChild(row)
+            }
+        })
+    }
+
+    table.replaceWith(newTable)
+}
+
+const renderDerived = () => {
+    const currentFilter = getVisible()
+    possibleFilters.forEach((result) => {
+        const input = document.querySelector(`input[data-test-result="${result}"]`)
+        input.checked = currentFilter.includes(result)
+    })
+}
+
+const bindEvents = () => {
+    const filterColumn = (evt) => {
+        const { target: element } = evt
+        const { testResult } = element.dataset
+
+        doFilter(testResult, element.checked)
+        const collapsedIds = getCollapsedIds()
+        const updated = manager.renderData.tests.map((test) => {
+            return {
+                ...test,
+                collapsed: collapsedIds.includes(test.id),
+            }
+        })
+        manager.setRender(updated)
+        redraw()
+    }
+
+    const header = document.getElementById('environment-header')
+    header.addEventListener('click', () => {
+        const table = document.getElementById('environment')
+        table.classList.toggle('hidden')
+        header.classList.toggle('collapsed')
+    })
+
+    findAll('input[name="filter_checkbox"]').forEach((elem) => {
+        elem.addEventListener('click', filterColumn)
+    })
+
+    findAll('.sortable').forEach((elem) => {
+        elem.addEventListener('click', (evt) => {
+            const { target: element } = evt
+            const { columnType } = element.dataset
+            doSort(columnType)
+            redraw()
+        })
+    })
+
+    document.getElementById('show_all_details').addEventListener('click', () => {
+        manager.allCollapsed = false
+        setCollapsedIds([])
+        redraw()
+    })
+    document.getElementById('hide_all_details').addEventListener('click', () => {
+        manager.allCollapsed = true
+        const allIds = manager.renderData.tests.map((test) => test.id)
+        setCollapsedIds(allIds)
+        redraw()
+    })
+}
+
+const redraw = () => {
+    const { testSubset } = manager
+
+    renderContent(testSubset)
+    renderDerived()
+}
+
+module.exports = {
+    redraw,
+    bindEvents,
+    renderStatic,
+}
+
+},{"./datamanager.js":1,"./dom.js":2,"./filter.js":3,"./sort.js":7,"./storage.js":8}],6:[function(require,module,exports){
+class MediaViewer {
+    constructor(assets) {
+        this.assets = assets
+        this.index = 0
+    }
+
+    nextActive() {
+        this.index = this.index === this.assets.length - 1 ? 0 : this.index + 1
+        return [this.activeFile, this.index]
+    }
+
+    prevActive() {
+        this.index = this.index === 0 ? this.assets.length - 1 : this.index -1
+        return [this.activeFile, this.index]
+    }
+
+    get currentIndex() {
+        return this.index
+    }
+
+    get activeFile() {
+        return this.assets[this.index]
+    }
+}
+
+
+const setup = (resultBody, assets) => {
+    if (!assets.length) {
+        resultBody.querySelector('.media').classList.add('hidden')
+        return
+    }
+
+    const mediaViewer = new MediaViewer(assets)
+    const container = resultBody.querySelector('.media-container')
+    const leftArrow = resultBody.querySelector('.media-container__nav--left')
+    const rightArrow = resultBody.querySelector('.media-container__nav--right')
+    const mediaName = resultBody.querySelector('.media__name')
+    const counter = resultBody.querySelector('.media__counter')
+    const imageEl = resultBody.querySelector('img')
+    const sourceEl = resultBody.querySelector('source')
+    const videoEl = resultBody.querySelector('video')
+
+    const setImg = (media, index) => {
+        if (media?.format_type === 'image') {
+            imageEl.src = media.path
+
+            imageEl.classList.remove('hidden')
+            videoEl.classList.add('hidden')
+        } else if (media?.format_type === 'video') {
+            sourceEl.src = media.path
+
+            videoEl.classList.remove('hidden')
+            imageEl.classList.add('hidden')
+        }
+
+        mediaName.innerText = media?.name
+        counter.innerText = `${index + 1} / ${assets.length}`
+    }
+    setImg(mediaViewer.activeFile, mediaViewer.currentIndex)
+
+    const moveLeft = () => {
+        const [media, index] = mediaViewer.prevActive()
+        setImg(media, index)
+    }
+    const doRight = () => {
+        const [media, index] = mediaViewer.nextActive()
+        setImg(media, index)
+    }
+    const openImg = () => {
+        window.open(mediaViewer.activeFile.path, '_blank')
+    }
+    if (assets.length === 1) {
+        container.classList.add('media-container--fullscreen')
+    } else {
+        leftArrow.addEventListener('click', moveLeft)
+        rightArrow.addEventListener('click', doRight)
+    }
+    imageEl.addEventListener('click', openImg)
+}
+
+module.exports = {
+    setup,
+}
+
+},{}],7:[function(require,module,exports){
+const { manager } = require('./datamanager.js')
+const storageModule = require('./storage.js')
+
+const genericSort = (list, key, ascending, customOrder) => {
+    let sorted
+    if (customOrder) {
+        sorted = list.sort((a, b) => {
+            const aValue = a.result.toLowerCase()
+            const bValue = b.result.toLowerCase()
+
+            const aIndex = customOrder.findIndex((item) => item.toLowerCase() === aValue)
+            const bIndex = customOrder.findIndex((item) => item.toLowerCase() === bValue)
+
+            // Compare the indices to determine the sort order
+            return aIndex - bIndex
+        })
+    } else {
+        sorted = list.sort((a, b) => a[key] === b[key] ? 0 : a[key] > b[key] ? 1 : -1)
+    }
+
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const durationSort = (list, ascending) => {
+    const parseDuration = (duration) => {
+        if (duration.includes(':')) {
+            // If it's in the format "HH:mm:ss"
+            const [hours, minutes, seconds] = duration.split(':').map(Number)
+            return (hours * 3600 + minutes * 60 + seconds) * 1000
+        } else {
+            // If it's in the format "nnn ms"
+            return parseInt(duration)
+        }
+    }
+    const sorted = list.sort((a, b) => parseDuration(a['duration']) - parseDuration(b['duration']))
+    if (ascending) {
+        sorted.reverse()
+    }
+    return sorted
+}
+
+const doInitSort = () => {
+    const type = storageModule.getSort(manager.initialSort)
+    const ascending = storageModule.getSortDirection()
+    const list = manager.testSubset
+    const initialOrder = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed', 'Skipped', 'Passed']
+
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    if (type?.toLowerCase() === 'original') {
+        manager.setRender(list)
+    } else {
+        let sortedList
+        switch (type) {
+        case 'duration':
+            sortedList = durationSort(list, ascending)
+            break
+        case 'result':
+            sortedList = genericSort(list, type, ascending, initialOrder)
+            break
+        default:
+            sortedList = genericSort(list, type, ascending)
+            break
+        }
+        manager.setRender(sortedList)
+    }
+}
+
+const doSort = (type, skipDirection) => {
+    const newSortType = storageModule.getSort(manager.initialSort) !== type
+    const currentAsc = storageModule.getSortDirection()
+    let ascending
+    if (skipDirection) {
+        ascending = currentAsc
+    } else {
+        ascending = newSortType ? false : !currentAsc
+    }
+    storageModule.setSort(type)
+    storageModule.setSortDirection(ascending)
+
+    const list = manager.testSubset
+    const sortedList = type === 'duration' ? durationSort(list, ascending) : genericSort(list, type, ascending)
+    manager.setRender(sortedList)
+}
+
+module.exports = {
+    doInitSort,
+    doSort,
+}
+
+},{"./datamanager.js":1,"./storage.js":8}],8:[function(require,module,exports){
+const possibleFilters = [
+    'passed',
+    'skipped',
+    'failed',
+    'error',
+    'xfailed',
+    'xpassed',
+    'rerun',
+]
+
+const getVisible = () => {
+    const url = new URL(window.location.href)
+    const settings = new URLSearchParams(url.search).get('visible')
+    const lower = (item) => {
+        const lowerItem = item.toLowerCase()
+        if (possibleFilters.includes(lowerItem)) {
+            return lowerItem
+        }
+        return null
+    }
+    return settings === null ?
+        possibleFilters :
+        [...new Set(settings?.split(',').map(lower).filter((item) => item))]
+}
+
+const hideCategory = (categoryToHide) => {
+    const url = new URL(window.location.href)
+    const visibleParams = new URLSearchParams(url.search).get('visible')
+    const currentVisible = visibleParams ? visibleParams.split(',') : [...possibleFilters]
+    const settings = [...new Set(currentVisible)].filter((f) => f !== categoryToHide).join(',')
+
+    url.searchParams.set('visible', settings)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const showCategory = (categoryToShow) => {
+    if (typeof window === 'undefined') {
+        return
+    }
+    const url = new URL(window.location.href)
+    const currentVisible = new URLSearchParams(url.search).get('visible')?.split(',').filter(Boolean) ||
+        [...possibleFilters]
+    const settings = [...new Set([categoryToShow, ...currentVisible])]
+    const noFilter = possibleFilters.length === settings.length || !settings.length
+
+    noFilter ? url.searchParams.delete('visible') : url.searchParams.set('visible', settings.join(','))
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getSort = (initialSort) => {
+    const url = new URL(window.location.href)
+    let sort = new URLSearchParams(url.search).get('sort')
+    if (!sort) {
+        sort = initialSort || 'result'
+    }
+    return sort
+}
+
+const setSort = (type) => {
+    const url = new URL(window.location.href)
+    url.searchParams.set('sort', type)
+    window.history.pushState({}, null, unescape(url.href))
+}
+
+const getCollapsedCategory = (renderCollapsed) => {
+    let categories
+    if (typeof window !== 'undefined') {
+        const url = new URL(window.location.href)
+        const collapsedItems = new URLSearchParams(url.search).get('collapsed')
+        switch (true) {
+        case !renderCollapsed && collapsedItems === null:
+            categories = ['passed']
+            break
+        case collapsedItems?.length === 0 || /^["']{2}$/.test(collapsedItems):
+            categories = []
+            break
+        case /^all$/.test(collapsedItems) || collapsedItems === null && /^all$/.test(renderCollapsed):
+            categories = [...possibleFilters]
+            break
+        default:
+            categories = collapsedItems?.split(',').map((item) => item.toLowerCase()) || renderCollapsed
+            break
+        }
+    } else {
+        categories = []
+    }
+    return categories
+}
+
+const getSortDirection = () => JSON.parse(sessionStorage.getItem('sortAsc')) || false
+const setSortDirection = (ascending) => sessionStorage.setItem('sortAsc', ascending)
+
+const getCollapsedIds = () => JSON.parse(sessionStorage.getItem('collapsedIds')) || []
+const setCollapsedIds = (list) => sessionStorage.setItem('collapsedIds', JSON.stringify(list))
+
+module.exports = {
+    getVisible,
+    hideCategory,
+    showCategory,
+    getCollapsedIds,
+    setCollapsedIds,
+    getSort,
+    setSort,
+    getSortDirection,
+    setSortDirection,
+    getCollapsedCategory,
+    possibleFilters,
+}
+
+},{}]},{},[4]);
+    </script>
+  </footer>
+</html>
