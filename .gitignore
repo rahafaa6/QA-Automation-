@@ -1,0 +1,12 @@
+/myenv/
+/downloads/
+/assets/
+/allure-report/
+/uploads/
+/videos/
+/reports/
+/screenshots/
+/test/file_operations/downloads/
+/test/file_operations/uploads/
+/test/utilities/reports/
+/test/utilities/screenshots/
