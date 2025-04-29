@@ -10,3 +10,11 @@
 /test/file_operations/uploads/
 /test/utilities/reports/
 /test/utilities/screenshots/
+.idea/
+__pycache__/
+/test/__pycache__/
+/test/authentication/__pycache__/
+/test/file_operations/__pycache__/
+/test/ui/__pycache__/
+/test/utilities/__pycache__/
+/test/websites/__pycache__/
