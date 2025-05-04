@@ -1,35 +1,17 @@
 import pytest
-from playwright.sync_api import sync_playwright
+from pages.OrangeHRM.LoginPage import FailedLogin
 from ..urls import URLS
-
-@pytest.fixture(scope="module")
-def browser():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
-        yield browser
-        browser.close()
-
-
-@pytest.fixture(scope="function")
-def page_handler(browser):
-    context = browser.new_context()
-    page = context.new_page()
-    yield page
-    context.close()
-
 
 @pytest.mark.parametrize("invalid_username, invalid_password", [
     ('admin', 'admin'),
     ('hdnj', 'djud')
 ])
 def test_login_page_invalid_credentials(page_handler, invalid_username, invalid_password):
+    login_page = FailedLogin(page_handler)
     page_handler.goto(URLS["orangehrm"])
 
-    page_handler.fill('//input[@name="username"]', invalid_username)
-    page_handler.fill('//input[@name="password"]', invalid_password)
-    page_handler.click('//button[@type="submit"]')
+    login_page.enter_credentials(invalid_username, invalid_password)
+    login_page.submit_form()
 
-    error_element = page_handler.wait_for_selector('//p[text()="Invalid credentials"]', timeout=10000)
-    error_message = error_element.text_content().strip()
-
-    assert error_message == "Invalid credentials"
+    error_element = login_page.get_error_message()
+    assert error_element.is_visible(), "Error message not displayed as expected"

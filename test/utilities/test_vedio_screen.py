@@ -1,6 +1,6 @@
-import os
 import pytest
-from playwright.sync_api import sync_playwright
+import os
+from pages.OrangeHRM.LoginPage import LoginPageWithMedia
 from ..urls import URLS
 
 @pytest.fixture(scope="session")
@@ -8,27 +8,13 @@ def setup_directories():
     os.makedirs('screenshots', exist_ok=True)
     os.makedirs('reports/videos', exist_ok=True)
 
-@pytest.fixture(scope="function")
-def browser_context():
-    with sync_playwright() as p:
-        browser = p.chromium.launch(headless=False)
-        context = browser.new_context(record_video_dir='reports/videos')
-        page = context.new_page()
-        yield page
-        context.close()
-        browser.close()
+def test_login_screenshots_and_video(page_handler, setup_directories):
+    login_page = LoginPageWithMedia(page_handler, URLS)
 
-def test_login_screenshots_and_video(setup_directories, browser_context):
-    page = browser_context
-    page.goto(URLS["orangehrm"])
-    page.wait_for_selector('//input[@name="username"]').fill('Admin')
-    page.wait_for_selector('//input[@name="password"]').fill('admin123')
-    page.screenshot(path='screenshots/login_page.png')
-    page.query_selector('//button[@type="submit"]').click()
-    page.wait_for_timeout(3000)
-    page.screenshot(path='screenshots/homepage.png')
-    video_path = 'reports/videos/login_video.mp4'
-    if os.path.exists(video_path):
-        print(f"Video saved to: {video_path}")
+    login_page.go_to_login_page()
+    login_page.perform_login('Admin', 'admin123')
+
+    if login_page.check_video_saved():
+        print("Video saved to: reports/videos/login_video.mp4")
     else:
         print("No video recorded.")

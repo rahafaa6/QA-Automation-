@@ -7,7 +7,6 @@ URLS = {
     "automation_testing_windows": "https://demo.automationtesting.in/Windows.html",
     "automation_testing_register": "https://demo.automationtesting.in/Register.html",
     "techlistic_table": "https://www.techlistic.com/2017/02/automate-demo-web-table-with-selenium.html",
-    "ajax_dropdown": "https://www.plus2net.com/php_tutorial/ajax_drop_down_list-demo.php",
     "ajax_response": "https://www.plus2net.com/php_tutorial/dd-ajax.php?",
     "file_upload_page": "https://demo.automationtesting.in/FileUpload.html",
     "download_page": "https://practice.expandtesting.com/download",

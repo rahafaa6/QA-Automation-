@@ -1,17 +1,7 @@
-import os
 import pytest
 from playwright.sync_api import sync_playwright
 from ..urls import URLS
-
-def get_file_path():
-    file_path = os.path.abspath(os.path.join("uploads", "test.txt"))
-
-    if not os.path.exists(file_path):
-        os.makedirs(os.path.dirname(file_path), exist_ok=True)
-        with open(file_path, "w", encoding="utf-8") as f:
-            f.write("Sample content for the file upload")
-
-    return file_path
+from pages.AutomationDemo.file_upload_page import FileUploadPage, get_file_path
 
 @pytest.mark.parametrize("file_path", [get_file_path()])
 def test_file_upload(file_path):
@@ -20,16 +10,15 @@ def test_file_upload(file_path):
         context = browser.new_context()
         page = context.new_page()
 
-        page.goto(URLS["file_upload_page"])
-        page.set_input_files("input#input-4", file_path)
-        page.wait_for_load_state("domcontentloaded")
+        file_upload_page = FileUploadPage(page)
+        file_upload_page.navigate_to_page(URLS["file_upload_page"])
+        file_upload_page.set_file_input(file_path)
+
         try:
-            page.wait_for_selector("span#input-4-filename", timeout=5000)
-            uploaded_file_name = page.locator("span#input-4-filename").text_content()
+            uploaded_file_name = file_upload_page.get_uploaded_file_name()
             assert uploaded_file_name == "test.txt", f"File upload failed. Uploaded file: {uploaded_file_name}"
             print("File uploaded successfully")
+
         except Exception as e:
             print(f"Error during file upload: {e}")
-
-        page.wait_for_timeout(3000)
         browser.close()
